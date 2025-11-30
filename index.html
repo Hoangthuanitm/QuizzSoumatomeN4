@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Danh Sách Bài Học Quizz Kanji Soumatome</title>
+    <title>Soumatome N4 - Danh Sách List & Quizz Các Tuần</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
             -webkit-user-select: none;
             user-select: none;
             margin: 0;
-            padding-bottom: 80px;
+            padding-bottom: 100px;
+            min-height: 100vh;
         }
         .container {
             max-width: 1100px;
@@ -39,7 +40,7 @@
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
@@ -53,25 +54,24 @@
             font-weight: 600;
             display: flex;
             align-items: center;
+            margin: 0;
         }
         .card-link {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0; left: 0;
             width: 100%;
             height: 100%;
             z-index: 10;
             border-radius: 12px;
-            cursor: pointer;
         }
         .coming-soon {
-            color: #6b7280;
+            color: #9ca3af;
             font-style: italic;
-            font-size: 1rem;
-            margin-top: 10px;
+            font-size: 0.95rem;
+            margin-top: 8px;
         }
         .icon {
-            margin-right: 10px;
+            margin-right: 12px;
             color: #34d399;
             font-size: 1.5rem;
             transition: color 0.3s ease;
@@ -84,16 +84,17 @@
             padding: 20px;
             background: linear-gradient(135deg, #1a73e8 0%, #2563eb 100%);
             color: #ffffff;
-            border-radius: 12px;
+            border-radius: 12px 12px 0 0;
             font-size: 1rem;
-            margin-top: 50px;
             position: fixed;
             bottom: 0;
+            left: 0;
             width: 100%;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
         }
         .footer p {
-            margin: 5px 0;
+            margin: 8px 0;
         }
         .back-to-top {
             position: fixed;
@@ -108,172 +109,174 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: opacity 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
             opacity: 0;
+            z-index: 999;
         }
         .back-to-top.show {
             opacity: 1;
         }
-        .quiz-card:active {
-            background: #f1f5f9;
-        }
         @media (max-width: 576px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            .quiz-title {
-                font-size: 1.2rem;
-            }
-            .quiz-card {
-                padding: 15px;
-            }
-            .footer {
-                font-size: 0.9rem;
-            }
+            h1 { font-size: 1.8rem; }
+            .quiz-title { font-size: 1.25rem; }
+            .quiz-card { padding: 16px; }
         }
     </style>
 </head>
 <body>
-            <div class="container">
-        <h1><i class="fas fa-graduation-cap icon"></i> Danh Sách Bài Học Soumatome N4</h1>
+
+    <div class="container">
+        <h1><i class="fas fa-graduation-cap" style="margin-right: 15px;"></i> Soumatome N4 - Các Tuần</h1>
+
         <div class="row">
+
+            <!-- Tuần 1 -->
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
                     <div class="quiz-title"><i class="fas fa-book icon"></i> List Tuần 1</div>
-                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan1" class="card-link" target="_blank" rel="noopener nofollow"></a>
-                </div>
-            </div>
-               <div class="col-md-6 col-12">
-                <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 1</div>
-                    <a href="https://wayground.com/admin/quiz/685acac1a527bce6a44b308e/quizz-soumatome-n4-tuan-1?shouldNotServeFromS3=true" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan1" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Bài tập Tuần 1</div>
-                    <a href="https://wayground.com/admin/quiz/685ad6e8996f4bfb90cb5e50" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Quizz Tuần 1</div>
+                    <a href="https://wayground.com/admin/quiz/685acac1a527bce6a44b308e/quizz-soumatome-n4-tuan-1?shouldNotServeFromS3=true" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
+            <div class="col-md-6 col-12">
+                <div class="quiz-card">
+                    <div class="quiz-title"><i class="fas fa-pencil-alt icon"></i> Bài Tập Tuần 1</div>
+                    <a href="https://wayground.com/admin/quiz/685ad6e8996f4bfb90cb5e50" class="card-link" target="_blank" rel="noopener"></a>
+                </div>
+            </div>
+
+            <!-- Tuần 2 -->
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
                     <div class="quiz-title"><i class="fas fa-book icon"></i> List Tuần 2</div>
-                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan2/" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan2/" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 2</div>
-                    <a href="https://wayground.com/admin/quiz/6863fcc7ec7ead9f5ff4a77e" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Quizz Tuần 2</div>
+                    <a href="https://wayground.com/admin/quiz/6863fcc7ec7ead9f5ff4a77e" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Bài tập Tuần 2</div>
-                    <a href="https://wayground.com/admin/quiz/686400427ba5e501e852aa54" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <div class="quiz-title"><i class="fas fa-pencil-alt icon"></i> Bài tập Tuần 2</div>
+                    <a href="https://wayground.com/admin/quiz/686400427ba5e501e852aa54" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
+
+            <!-- Tuần 3 -->
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
                     <div class="quiz-title"><i class="fas fa-book icon"></i> List Tuần 3</div>
-                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan3/" class="card-link" target="_blank" rel="noopener nofollow"></a>
-                </div>
-                </div>
-                <div class="col-md-6 col-12">
-                <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 3</div>
-                    <a href="https://wayground.com/admin/quiz/68392ed013ebb31a9feeec99" class="card-link" target="_blank" rel="noopener nofollow"></a>
-                </div>
-                 </div>
-                <div class="col-md-6 col-12">
-                <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Bài tập Tuần 3</div>
-                    <a href="https://wayground.com/admin/quiz/6846f2186947b8cbb0b84f2a?at=6846f2d354f7180211f8a328" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan3/" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
+            <div class="col-md-6 col-12">
+                <div class="quiz-card">
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Quizz Tuần 3</div>
+                    <a href="https://wayground.com/admin/quiz/68392ed013ebb31a9feeec99" class="card-link" target="_blank" rel="noopener"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="quiz-card">
+                    <div class="quiz-title"><i class="fas fa pencil-alt icon"></i> Bài tập Tuần 3</div>
+                    <a href="https://wayground.com/admin/quiz/6846f2186947b8cbb0b84f2a?at=6846f2d354f7180211f8a328" class="card-link" target="_blank" rel="noopener"></a>
+                </div>
+            </div>
+
+            <!-- Tuần 4 -->
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
                     <div class="quiz-title"><i class="fas fa-book icon"></i> List Tuần 4</div>
-                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan4/" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan4/" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 4</div>
-                    <a href="https://wayground.com/admin/quiz/683b01ce4441b5535edc28f2" class="card-link" target="_blank" rel="noopener nofollow"></a>
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Quizz Tuần 4</div>
+                    <a href="https://wayground.com/admin/quiz/683b01ce4441b5535edc28f2" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Bài tập Tuần 4</div>
-                    <a href="https://wayground.com/admin/quiz/683b1bd3f9254a2577edff9e"></a>
+                    <div class="quiz-title"><i class="fas fa-pencil-alt icon"></i> Bài tập Tuần 4</div>
+                    <a href="https://wayground.com/admin/quiz/683b1bd3f9254a2577edff9e" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
-             <div class="col-md-6 col-12">
+
+            <!-- Tuần 5 - Sắp có -->
+            <div class="col-md-6 col-12">
                 <div class="quiz-card">
                     <div class="quiz-title"><i class="fas fa-book icon"></i> List Tuần 5</div>
-                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan5/"></a>
+                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan5//" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
-             <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 5</div>
-                    <a href="https://wayground.com/admin/quiz/683b022519d3fc51692cb1ef"></a>
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Quizz Tuần 5</div>
+                    <a href="https://wayground.com/admin/quiz/683b022519d3fc51692cb1ef" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
-             <div class="col-md-6 col-12">
+                      <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Bài tập Quizz Tuần 5</div>
-                    <a href="https://wayground.com/admin/quiz/683bfda5366e5c0fbc032ffc"></a>
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Bài Tập Tuần 5</div>
+                    <a href="https://wayground.com/admin/quiz/683bfda5366e5c0fbc032ffc" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
+
+            <!-- Tuần 6 - Sắp có -->
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
                     <div class="quiz-title"><i class="fas fa-book icon"></i> List Tuần 6</div>
-                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan6/"></a>
+                    <a href="https://hoangthuanitm.github.io/soumatomeN4tuan6/" class="card-link" target="_blank" rel="noopener"></a>   
+                </div>
+            </div>
+                  <div class="col-md-6 col-12">
+                <div class="quiz-card">
+                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quiz Tuần 6</div>
+                    <a href="https://wayground.com/admin/quiz/683b02df7e9d87d4b1ec20a7" class="card-link" target="_blank" rel="noopener"></a>   
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 6</div>
-                    <a href="https://wayground.com/admin/quiz/683b02df7e9d87d4b1ec20a7"></a>
-                </div>
+                    <div class="quiz-title"><i class="fas fa-question-circle icon"></i> Bài Tập Tuần 6</div>
+<a href="https://wayground.com/admin/quiz/683c0735e06105f1c9bd898b" class="card-link" target="_blank" rel="noopener"></a>                </div>
             </div>
+
+            <!-- Tổng hợp -->
             <div class="col-md-6 col-12">
                 <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Bài tập Quizz Tuần 6</div>
-                    <a href="https://wayground.com/admin/quiz/683c0735e06105f1c9bd898b"></a>
+                    <div class="quiz-title"><i class="fas fa-trophy icon"></i> Quizz Tổng hợp Tuần 3-6</div>
+                    <a href="https://wayground.com/admin/quiz/6846f4adaed6c7bff96bb7ef?at=6846ff4e84ed5771373ecbd2" class="card-link" target="_blank" rel="noopener"></a>
                 </div>
             </div>
-               <div class="col-md-6 col-12">
-                <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Tuần 3-6</div>
-                    <a href="https://wayground.com/admin/quiz/6846f4adaed6c7bff96bb7ef?at=6846ff4e84ed5771373ecbd2"></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-12">
-                <div class="quiz-card">
-                    <div class="quiz-title"><i class="fas fa-book icon"></i> Quizz Bài tập Tuần 3-6</div>
-                    <a href="https://wayground.com/admin/quiz/6846dc41516eaf159fa723c8"></a>
-                </div>
-            </div>
-        <div class="footer">
-            <p><i class="fas fa-graduation-cap icon"></i> Cùng học tập và chinh phục kiến thức với Quizz!</p>
-            <p>© 2025 Tài liệu học tập | Thiết kế bởi Thuận</p>
-        </div>
+
+        </div> <!-- end .row -->
+    </div> <!-- end .container -->
+
+    <div class="footer">
+        <p><i class="fas fa-graduation-cap" style="margin-right: 10px;"></i> Cùng học tập và chinh phục N4 với Soumatome!</p>
+        <p>© 2025 Tài liệu học tập • Thiết kế bởi Thuận</p>
     </div>
-    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Quay lên đầu trang">
         <i class="fas fa-arrow-up"></i>
     </div>
 
     <script>
         window.addEventListener('scroll', () => {
-            const backToTop = document.querySelector('.back-to-top');
+            const btn = document.querySelector('.back-to-top');
             if (window.scrollY > 300) {
-                backToTop.classList.add('show');
+                btn.classList.add('show');
             } else {
-                backToTop.classList.remove('show');
+                btn.classList.remove('show');
             }
         });
     </script>
